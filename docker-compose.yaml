@@ -38,7 +38,7 @@ services:
   composer:
     build:
       context: .
-      dockerfile: dockerfiles/php/php.dockerfile
+      dockerfile: dockerfiles/php.dockerfile
     volumes:
       - ./src:/var/www/html
     entrypoint: ['composer']
