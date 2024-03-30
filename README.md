@@ -77,7 +77,7 @@ Before you begin, ensure you have the following installed on your system:
     DB_PASSWORD=1234
    ```
 
-7. ** Generate Application Key **
+7. **Generate Application Key**
    
    Generate a new application key:
     
@@ -85,7 +85,7 @@ Before you begin, ensure you have the following installed on your system:
     docker compose run --rm artisan key:generate
     ```
 
-8. ** Run Database Migrations **
+8. **Run Database Migrations**
    
    Apply the database migrations:
    
@@ -93,7 +93,7 @@ Before you begin, ensure you have the following installed on your system:
     docker compose run --rm artisan migrate
     ```
 
-9. ** Seed the Database **
+9. **Seed the Database**
    
    Populate the database with initial data:
    
@@ -101,7 +101,7 @@ Before you begin, ensure you have the following installed on your system:
     docker compose run --rm artisan db:seed
    ```
 
-10. **Run the API Tests **
+10. **Run the API Tests**
     
 	Ensure everything is set up correctly by running:
     
