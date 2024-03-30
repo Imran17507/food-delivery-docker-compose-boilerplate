@@ -105,10 +105,10 @@ After installation, you can test the API endpoints using a tool like Postman or 
     ```
   Payload:
 
-    ```json
-        {
-            "restaurant_id": "10"
-        }
-    ```
+```json
+    {
+        "restaurant_id": "10"
+    }
+```
 
 Follow these steps to set up and start using the Food Delivery App Service.
