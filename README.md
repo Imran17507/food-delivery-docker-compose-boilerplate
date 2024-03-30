@@ -100,15 +100,15 @@ After installation, you can test the API endpoints using a tool like Postman or 
 ```
 
 - Find Nearest Rider
-  ```bash
-POST http://localhost:8000/api/restaurant/nearest-rider
-  ```
+    ```bash
+    POST http://localhost:8000/api/restaurant/nearest-rider
+    ```
   Payload:
 
-```json
-{
-  "restaurant_id": "10"
-}
-```
+    ```json
+        {
+            "restaurant_id": "10"
+        }
+    ```
 
 Follow these steps to set up and start using the Food Delivery App Service.
