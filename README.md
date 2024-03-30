@@ -17,76 +17,76 @@ Before you begin, ensure you have the following installed on your system:
    First, clone the boilerplate repository to your local machine. Open your terminal and run the following command:
 
    ```bash
-    git clone git@github.com:Imran17507/food-delivery-docker-compose-boilerplate.git food-delivery-app
+   git clone git@github.com:Imran17507/food-delivery-docker-compose-boilerplate.git food-delivery-app
    ```
 
 2. **Navigate to the Application Directory**
    Change into the newly created directory:
-   `bash
-  cd food-delivery-app
- `
+   ```bash
+   cd food-delivery-app
+   ```
 3. **Clone the Application**
    Clone the application into a src directory within the food-delivery-app folder:
-   `bash
-git clone git@github.com:Imran17507/food-delivery-app.git src
-	`
+   ```bash
+    git clone git@github.com:Imran17507/food-delivery-app.git src
+   ```
 4. **Install Dependencies with Docker Compose**
    Run the following command to install PHP dependencies through Composer:
-   `bash
-docker compose run --rm composer install
-	`
+   ```bash
+   docker compose run --rm composer install
+   ```
 5. **Start the Server**
    Use Docker Compose to start the server:
-   `bash
-docker compose up -d server
-	`
+   ```bash
+   docker compose up -d server
+   ```
 6. **Set Up Environment Configuration**
    Use Docker Compose to start the server:
-   `bash
-cd src
-	`
+   ```bash
+   cd src
+   ```
    Copy the example environment file to create a new .env file:
-   `bash
-cp .env.example .env
-	`
+   ```bash
+    cp .env.example .env
+    ```
    Ensure the .env file contains the following database configuration:
-   `php
-DB_CONNECTION=mysql
-DB_HOST=mysql
-DB_PORT=3306
-DB_DATABASE=food_delivery
-DB_USERNAME=admin
-DB_PASSWORD=1234
-	`
+   ```php
+    DB_CONNECTION=mysql
+    DB_HOST=mysql
+    DB_PORT=3306
+    DB_DATABASE=food_delivery
+    DB_USERNAME=admin
+    DB_PASSWORD=1234
+   ```
 7. ** Generate Application Key **
    Generate a new application key:
-   `bash
-docker compose run --rm artisan key:generate
-	`
+    ```bash
+    docker compose run --rm artisan key:generate
+    ```
 8. ** Run Database Migrations **
    Apply the database migrations:
-   `bash
-docker compose run --rm artisan migrate
-	`
+   ```bash
+    docker compose run --rm artisan migrate
+    ```
 9. ** Seed the Database **
    Populate the database with initial data:
-   `bash
-docker compose run --rm artisan db:seed
-	`
+   ```bash
+    docker compose run --rm artisan db:seed
+   ```
 10. ** Run the API Tests **
     Ensure everything is set up correctly by running:
-    `bash
-docker compose run --rm test
-	`
+    ```bash
+    docker compose run --rm test
+    `
 
 ## Testing API Endpoints
 
 After installation, you can test the API endpoints using a tool like Postman or curl.
 
 - Store Rider Location History
-  `bash
-POST http://localhost:8000/api/rider/location-history
-	`
+  ```bash
+    POST http://localhost:8000/api/rider/location-history
+  ```
   Payload:
 
 ```json
@@ -100,9 +100,9 @@ POST http://localhost:8000/api/rider/location-history
 ```
 
 - Find Nearest Rider
-  `bash
+  ```bash
 POST http://localhost:8000/api/restaurant/nearest-rider
-	`
+  ```
   Payload:
 
 ```json
